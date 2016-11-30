@@ -13,8 +13,10 @@ Hero.prototype = {
   eat: function(food){
     if (food.isPoisoned === true){
       food.energy = -50;
+      this.health += food.energy;
+      return;
     }
-    if(food.name === this.food && food.isPoisoned === false){
+    if(food.name === this.food) {
       food.energy *= 1.5;
     }
      this.health += food.energy;

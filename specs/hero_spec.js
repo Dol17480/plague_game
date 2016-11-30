@@ -51,4 +51,10 @@ describe('hero', function(){
     assert.equal(50, hero1.health);
   });
 
+  it('should decease with fave food', function(){
+    rat1.touch(food2);
+    hero1.eat(food2);
+    assert.equal(50, hero1.health);
+  })
+
 });
