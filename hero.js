@@ -9,6 +9,9 @@ var Hero = function(name, health, food){
 Hero.prototype = {
   talk: function(){
     return "I am a hero";
+  },
+  eat: function(food){
+      this.health += food.energy;
   }
 };
 
