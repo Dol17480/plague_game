@@ -11,9 +11,12 @@ Hero.prototype = {
     return "I am a hero";
   },
   eat: function(food){
-      this.health += food.energy;
-  }
-};
+    if(food.name === this.food){
+      food.energy *= 1.5;
+    }
+     this.health += food.energy;
+    }
+  };
 
 
 module.exports = Hero;
