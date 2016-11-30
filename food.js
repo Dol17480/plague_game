@@ -1,9 +1,7 @@
-var assert = require('assert');
-
-var Food = function(name, energy, status){
+var Food = function(name, energy){
   this.name = name;
   this.energy = energy;
-  this.status = status;
+  this.isPoisoned = false;
 };
 
 

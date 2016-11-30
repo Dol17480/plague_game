@@ -9,18 +9,14 @@ describe('rat', function(){
 
   beforeEach(function(){
     rat1 = new Rat();
-    food1 = new Food("Lettuce", 1, true)
+    food1 = new Food("Lettuce", 1)
   })
   
 
     it("should change food status", function(){
       rat1.touch(food1);
-      assert.equal(false, food1.status);
+      assert.equal(true, food1.isPoisoned);
     });
 
-    // it('takes from heros health', function(){
-    //   rat.touch();
-    //   assert.equal(false, hero1.health);
-    // });
 
   });
